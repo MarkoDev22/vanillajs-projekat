@@ -137,6 +137,12 @@
       "email": "amd@amd.com",
       "interesting": [],
       "id": 75291282
+    },
+    {
+      "name": "LG",
+      "email": "lg@gmail.com",
+      "interesting": [],
+      "id": 75291283
     }
   ],
   "candidates": [
@@ -195,15 +201,8 @@
       "email": "john.may@gmail.com",
       "education": "Technician",
       "avatar": "https://images.unsplash.com/photo-1489980557514-251d61e3eeb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-    },
-    {
-      "name": "KITA",
-      "birthday": "2023-04-20",
-      "email": "kitic@test.com",
-      "education": "aleksaaaa",
-      "avatar": "https://cdn.pixabay.com/photo/2016/08/31/11/54/icon-1633249_960_720.png",
-      "id": 84852311
     }
+   
   ],
   "reports": [
     {
@@ -667,6 +666,17 @@
       "phase": "cv",
       "status": "declined",
       "note": "Iure ea est molestias. Et iste fuga. Delectus corrupti natus impedit architecto temporibus eos quis."
+    },
+    {
+      "candidateId": "84815318",
+      "candidateName": "John May",
+      "companyId": "75291275",
+      "companyName": "Netflix",
+      "phase": "tech",
+      "status": "declined",
+      "note": "dsada",
+      "interviewDate": "2025-10-05T16:23:07.964Z",
+      "id": 91627252
     }
   ],
   "users": [
