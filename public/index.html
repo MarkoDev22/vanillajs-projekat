@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interviews Reports</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="main-nav" style="display: none">
+        <ul>
+          <li><a href="#" id="home">Home</a></li>
+          <li><a href="#" id="companies">Companies</a></li>
+          <li><a href="#" id="candidates">Candidates</a></li>
+          <li><a href="#" id="reports">Reports</a></li>
+          <li><a href="#" id="users">Users</a></li>
+          <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section id="login-section">
+        <h2>Login</h2>
+        <form id="login-form">
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required />
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <p id="login-error" style="color: red; display: none">
+          Invalid email or password!
+        </p>
+      </section>
+
+      <section id="companies-section" style="display: none">
+        <h2>Companies</h2>
+        <ul id="companies-list">
+          <!-- Dinamički prikaz kompanija -->
+        </ul>
+        <section id="add-company-section">
+          <h3>Add New Company</h3>
+          <form id="add-company-form">
+            <div>
+              <label for="company-name">Name:</label>
+              <input type="text" id="company-name" required />
+            </div>
+            <div>
+              <label for="company-email">Email:</label>
+              <input type="email" id="company-email" required />
+            </div>
+            <button type="submit">Add Company</button>
+          </form>
+        </section>
+      </section>
+
+      <section id="candidates-section" style="display: none">
+        <h2>Candidates</h2>
+        <ul id="candidates-list">
+          <!-- Dinamički prikaz kandidata -->
+        </ul>
+      </section>
+
+      <section id="reports-section" style="display: none">
+        <h2>Reports</h2>
+        <ul id="reports-list">
+          <!-- Dinamički prikaz izveštaja -->
+        </ul>
+
+        <!-- Sekcija za dodavanje novog izveštaja -->
+        <h3>Add New Report</h3>
+        <form id="add-report-form">
+          <div>
+            <label for="candidate-id">Candidate:</label>
+            <select id="candidate-id" required>
+              <!-- Dinamički prikaz kandidata -->
+            </select>
+          </div>
+          <div>
+            <label for="company-id">Company:</label>
+            <select id="company-id" required>
+              <!-- Dinamički prikaz kompanija -->
+            </select>
+          </div>
+          <div>
+            <label for="phase">Phase:</label>
+            <select id="phase" required>
+              <option value="cv">CV</option>
+              <option value="hr">HR</option>
+              <option value="tech">Technical</option>
+              <option value="final">Final</option>
+            </select>
+          </div>
+          <div>
+            <label for="status">Status:</label>
+            <select id="status" required>
+              <option value="passed">Passed</option>
+              <option value="declined">Declined</option>
+            </select>
+          </div>
+          <div>
+            <label for="note">Note:</label>
+            <textarea id="note" required></textarea>
+          </div>
+          <button type="submit">Add Report</button>
+        </form>
+
+        <!-- Sekcija za uređivanje izveštaja -->
+        <div id="edit-report-modal" style="display: none">
+          <h3>Edit Report</h3>
+
+          <form id="edit-report-form">
+            <div>
+              <label for="edit-phase">Phase:</label>
+              <select id="edit-phase" required>
+                <option value="cv">CV</option>
+                <option value="hr">HR</option>
+                <option value="tech">Technical</option>
+                <option value="final">Final</option>
+              </select>
+            </div>
+            <div>
+              <label for="edit-status">Status:</label>
+              <select id="edit-status" required>
+                <option value="passed">Passed</option>
+                <option value="declined">Declined</option>
+              </select>
+            </div>
+            <div>
+              <label for="edit-note">Note:</label>
+              <textarea id="edit-note" required></textarea>
+            </div>
+            <button type="submit">Save Changes</button>
+            <button type="button" id="cancel-edit">Cancel</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="users-section" style="display: none">
+        <h2>Users</h2>
+        <ul id="users-list">
+          <!-- Dinamički prikaz korisnika -->
+        </ul>
+        <h3>Add New User</h3>
+        <form id="add-user-form">
+          <div>
+            <label for="user-name">Name:</label>
+            <input type="text" id="user-name" required />
+          </div>
+          <div>
+            <label for="user-email">Email:</label>
+            <input type="email" id="user-email" required />
+          </div>
+          <div>
+            <label for="user-password">Password:</label>
+            <input type="password" id="user-password" required />
+          </div>
+          <button type="submit">Add User</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="auth.js"></script>
+    <script src="api.js"></script>
+    <script src="app.js" defer></script>
+  </body>
+</html>

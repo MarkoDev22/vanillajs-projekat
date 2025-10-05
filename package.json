@@ -1,0 +1,16 @@
+{
+  "name": "vanillajs-projekat",
+  "version": "1.0.0",
+  "description": "Interviews Reports App",
+  "main": "index.js",
+  "scripts": {
+    "auth-server": "node server.js"
+  },
+  "keywords": [],
+  "author": "Marko",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.4",
+    "json-server-auth": "^2.1.0"
+  }
+}
